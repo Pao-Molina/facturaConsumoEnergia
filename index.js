@@ -16,3 +16,10 @@ const iva = function() {
 }
 
 
+let calcularSubtotal = () => {
+  let consumo = consumoKilovatios(); 
+  let tarifa = tarifaBaseKilovatios(); 
+  return consumo * tarifa;
+}
+
+
