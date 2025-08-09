@@ -6,3 +6,8 @@ function tarifaBaseKilovatios() {
   return 1000; 
 }
 
+
+const cargoFijo = function() {
+  return 500; 
+}
+
