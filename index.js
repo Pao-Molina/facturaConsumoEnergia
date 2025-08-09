@@ -35,5 +35,24 @@ let calcularTotalPagar = () => {
   return subtotal + valorIva + valorCargoFijo;
 }
 
+function Factura() {
+  let consumo = consumoKilovatios();
+  let tarifa = tarifaBaseKilovatios();
+  let subtotal = calcularSubtotal();
+  let valorIva = calcularIva();
+  let valorCargoFijo = cargoFijo();
+  let total = calcularTotalPagar();
+
+  console.log("Factura de Consumo de Energía");
+  console.log(`Consumo mensual de Kilovatios: ${consumo} Kws`);
+  console.log(`Tarifa básica por Kilovatio: ${tarifa} pesos`);
+  console.log(`Subtotal: ${subtotal} pesos`);
+  console.log(`Cargo Fijo: ${valorCargoFijo} pesos`);
+  console.log(`IVA (10%): ${valorIva} pesos`);
+  console.log(`Total a Pagar: ${total} pesos`);
+}
+
+Factura();
+
 
 
