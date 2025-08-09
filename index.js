@@ -28,4 +28,12 @@ let calcularIva = () => {
   return subtotal * porcentajeIva;
 }
 
+let calcularTotalPagar = () => {
+  let subtotal = calcularSubtotal(); 
+  let valorIva = calcularIva();
+  let valorCargoFijo = cargoFijo();
+  return subtotal + valorIva + valorCargoFijo;
+}
+
+
 
