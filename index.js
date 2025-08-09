@@ -22,4 +22,10 @@ let calcularSubtotal = () => {
   return consumo * tarifa;
 }
 
+let calcularIva = () => {
+  let subtotal = calcularSubtotal(); 
+  let porcentajeIva = iva();
+  return subtotal * porcentajeIva;
+}
+
 
